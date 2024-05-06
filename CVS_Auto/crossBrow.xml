@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="1" parallel="classes">
+
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="browser" value="chromebrowser"></parameter>
+  <classes>
+  <class name="Generic.CrossBrowserTesting"></class>
+   <class name="Script.SearchSelectDocumentLocation"></class>
+  </classes>
+   </test> <!-- Test -->
+   <test thread-count="5" name="EdgeTest">
+  <parameter name="browser" value="edgebrowser"></parameter>
+  <classes>
+  <class name="Generic.CrossBrowserTesting"></class>
+   <class name="Script.PrintFunctionality"></class>
+  </classes>
+   </test> <!-- Test -->
+   
+   <!--  <test thread-count="5" name="FirefoxTest">
+  <parameter name="browser" value="firefoxbrowser"></parameter>
+  <classes>
+  <class name="Generic.CrossBrowserTesting"></class>
+  </classes>
+   </test> Test -->
+   
+   
+   
+   
+</suite> <!-- Suite -->

@@ -1,0 +1,1141 @@
+<html>
+<head>
+<title>TestNG:  Test3</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test3</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>63/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 25 10:57:35 CDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>2055 seconds (2055685 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc01_LoginSIDBI()'><b>Tc01_LoginSIDBI</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-9370769" onClick='toggleBox("Output-9370769", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9370769" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9370769">
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc02_CreateOfficeNoteDynamicWF()'><b>Tc02_CreateOfficeNoteDynamicWF</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-26278501" onClick='toggleBox("Output-26278501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26278501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26278501">
+Scenario 01: Create Document with 'OFFICE NOTES' document type and Add all Task User - 'Approved and Forward' by all users'<br/>
+Click on New document tab<br/>
+Click on Document location textbox<br/>
+Select Folder Location for creating a document<br/>
+Select OFFICE NOTES document type and Enter all Required details<br/>
+====================================================================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on Task User textbox<br/>
+It should open 'Dynamic User and Groups' for workflow dialog<br/>
+Enter Username into 'Search' text box<br/>
+Click on find button<br/>
+Select the Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select a browse option<br/>
+Add a file by using AutoIT scirpt<br/>
+Click on create and view button<br/>
+OFFICE NOTES Document created successfully....<br/>
+Click SendtoWorkflow button<br/>
+</div>
+</td>
+<td></td>
+<td>164</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc03_EnterOTPDialog()'><b>Tc03_EnterOTPDialog</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-2845580" onClick='toggleBox("Output-2845580", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2845580" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2845580">
+Scenario 02: Validate OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc04_SendToWorkflowDialog()'><b>Tc04_SendToWorkflowDialog</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-6788843" onClick='toggleBox("Output-6788843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6788843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6788843">
+Scenario 03: Orginator Sending the document to 'OFFICE NOTES' workflow<br/>
+Select 'OFFICE NOTES' workflow from 'Available Workflow' list<br/>
+Click on Apply button<br/>
+The document will be sent to workflow successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc05_Originator_LogouthePage()'><b>Tc05_Originator_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-2212939" onClick='toggleBox("Output-2212939", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2212939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2212939">
+Scenario 4:Originator Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc06_Task_User1_Login()'><b>Tc06_Task_User1_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-17315880" onClick='toggleBox("Output-17315880", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17315880" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17315880">
+Scenario 5:Login as Task User-1<br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc07_User1_ApproveAnd_PSR()'><b>Tc07_User1_ApproveAnd_PSR</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-28402359" onClick='toggleBox("Output-28402359", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28402359" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28402359">
+Scenario 7:Task User-1 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc08_User_1_OTP_Validation()'><b>Tc08_User_1_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-9424545" onClick='toggleBox("Output-9424545", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9424545" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9424545">
+Scenario 8:Enter valid OTP<br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc09_User_1_Add_One_More_Task_User()'><b>Tc09_User_1_Add_One_More_Task_User</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-4261933" onClick='toggleBox("Output-4261933", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4261933" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4261933">
+Scenario 9 : Add a Next Task User<br/>
+It should open Dynamic User and Groups for workflow dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Next Task User Added Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>66</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc10_User_1_EnterCommentAndApprovedForwardR()'><b>Tc10_User_1_EnterCommentAndApprovedForwardR</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-20178583" onClick='toggleBox("Output-20178583", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20178583" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20178583">
+Scenario 10:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comment added Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc11_TaskUser_1_LogouthePage()'><b>Tc11_TaskUser_1_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-7978530" onClick='toggleBox("Output-7978530", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7978530" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7978530">
+Scenario 11:TAsk User -1 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc12_Task_User1_Login()'><b>Tc12_Task_User1_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-27393928" onClick='toggleBox("Output-27393928", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27393928" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27393928">
+Scenario 12:Login as Task User-2 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc13_User2_ApproveAnd_Forward()'><b>Tc13_User2_ApproveAnd_Forward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-7800898" onClick='toggleBox("Output-7800898", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7800898" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7800898">
+Scenario 13:Task User-2 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc14_User_2_OTP_Validation()'><b>Tc14_User_2_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-13674295" onClick='toggleBox("Output-13674295", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13674295" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13674295">
+Scenario 14:Enter valid OTP<br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc15_User_2_Add_One_More_Task_User()'><b>Tc15_User_2_Add_One_More_Task_User</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-5561254" onClick='toggleBox("Output-5561254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5561254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5561254">
+Scenario 15 : Add a Next Task User<br/>
+It should open Dynamic User and Groups for workflow dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Next task user added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>66</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc16_User_2_EnterCommentAndApprovedForward()'><b>Tc16_User_2_EnterCommentAndApprovedForward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-9832866" onClick='toggleBox("Output-9832866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9832866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9832866">
+Scenario 16:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comment added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc17_TaskUser_2_LogouthePage()'><b>Tc17_TaskUser_2_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-27412444" onClick='toggleBox("Output-27412444", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27412444" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27412444">
+Scenario 17:Task User-2 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc18_Task_User3_Login()'><b>Tc18_Task_User3_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-11677085" onClick='toggleBox("Output-11677085", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11677085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11677085">
+Scenario 18:Login as Task User-3 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc19_User3_ApproveAnd_Forward()'><b>Tc19_User3_ApproveAnd_Forward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-2868888" onClick='toggleBox("Output-2868888", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2868888" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2868888">
+Scenario 19:Task User-3 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc20_User_3_OTP_Validation()'><b>Tc20_User_3_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-21379121" onClick='toggleBox("Output-21379121", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21379121" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21379121">
+Scenario 20:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc21_User__3Add_One_More_Task_User()'><b>Tc21_User__3Add_One_More_Task_User</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-10119725" onClick='toggleBox("Output-10119725", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10119725" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10119725">
+Scenario 21 :Add a next task user<br/>
+Select Task User for dynamic workflow<br/>
+It should open 'Dynamic User and Groups for workflow' dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Next task added Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>69</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc22_User_3_EnterCommentAndApprovedForward()'><b>Tc22_User_3_EnterCommentAndApprovedForward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-19785309" onClick='toggleBox("Output-19785309", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19785309" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19785309">
+Scenario 22:Enter Comments  into the 'Approve and PSR' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comment added succesfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc23_TaskUser__3_LogouthePage()'><b>Tc23_TaskUser__3_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-16760316" onClick='toggleBox("Output-16760316", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16760316" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16760316">
+Scenario 23:Task User-3 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc24_Task_User4_Login()'><b>Tc24_Task_User4_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-16102684" onClick='toggleBox("Output-16102684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16102684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16102684">
+Scenario 24:Login as Task user-4<br/>
+Log into EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc25_User5_ApproveAnd_Forward()'><b>Tc25_User5_ApproveAnd_Forward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-18263276" onClick='toggleBox("Output-18263276", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18263276" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18263276">
+Scenario 25:Task User-4 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc26_User_4_OTP_Validation()'><b>Tc26_User_4_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-15122905" onClick='toggleBox("Output-15122905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15122905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15122905">
+Scenario 20:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc27_User__4_Add_One_More_Task_User()'><b>Tc27_User__4_Add_One_More_Task_User</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-30040049" onClick='toggleBox("Output-30040049", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30040049" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30040049">
+Scenario 27 : Add a next task user<br/>
+Select Task User for Dynamic Workflow<br/>
+It should open Dynamic User and Groups for workflow dialog<br/>
+Enter User name into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a User<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Next task user Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc28_User_4_EnterCommentAndApprovedForward()'><b>Tc28_User_4_EnterCommentAndApprovedForward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-7768347" onClick='toggleBox("Output-7768347", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7768347" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7768347">
+Scenario 28:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comments added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc29_TaskUser_4_LogouthePage()'><b>Tc29_TaskUser_4_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-25670852" onClick='toggleBox("Output-25670852", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25670852" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25670852">
+Scenario 29:Task User-4 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc30_Task_User5_Login()'><b>Tc30_Task_User5_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-19460087" onClick='toggleBox("Output-19460087", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19460087" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19460087">
+Scenario 30:Login as Task user-5<br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc31_User5_ApproveAndEnd_Forward()'><b>Tc31_User5_ApproveAndEnd_Forward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-28289403" onClick='toggleBox("Output-28289403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28289403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28289403">
+Scenario 31:Task User-5 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc32_User_5_OTP_Validation()'><b>Tc32_User_5_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-22064347" onClick='toggleBox("Output-22064347", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22064347" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22064347">
+Scenario 32:Enter valid OTP<br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc33_User_5_Add_One_More_Task_User()'><b>Tc33_User_5_Add_One_More_Task_User</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-18831294" onClick='toggleBox("Output-18831294", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18831294" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18831294">
+Scenario 29: Add a Next Task User<br/>
+Select Task User for dynamic workflow<br/>
+It should open 'Dynamic User and Groups for workflow' dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Next task user added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>65</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc34_User_5_EnterCommentAndEndForward()'><b>Tc34_User_5_EnterCommentAndEndForward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-2086811" onClick='toggleBox("Output-2086811", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2086811" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2086811">
+Scenario 34:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comment added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc35_TaskUser_5_LogouthePage()'><b>Tc35_TaskUser_5_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-679427" onClick='toggleBox("Output-679427", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-679427" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-679427">
+Scenario 35:Task User-5 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc36_Task_User6_Login()'><b>Tc36_Task_User6_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-2974691" onClick='toggleBox("Output-2974691", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2974691" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2974691">
+Scenario 36:Login as Task User 6<br/>
+Log into EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc37_User6_ApproveAnd_Forward()'><b>Tc37_User6_ApproveAnd_Forward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-8177906" onClick='toggleBox("Output-8177906", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8177906" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8177906">
+Scenario 37:Task User-6 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc38_User_6_OTP_Validation()'><b>Tc38_User_6_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-24499989" onClick='toggleBox("Output-24499989", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24499989" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24499989">
+Scenario 38:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc39_User_6_Add_One_More_Task_User()'><b>Tc39_User_6_Add_One_More_Task_User</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-24865034" onClick='toggleBox("Output-24865034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24865034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24865034">
+Scenario 39 :Add a Next Task User<br/>
+It should open Dynamic User and Groups for workflow dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Next task user added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>66</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc40_User_6_EnterCommentAndApprovedForward()'><b>Tc40_User_6_EnterCommentAndApprovedForward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-29607168" onClick='toggleBox("Output-29607168", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29607168" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29607168">
+Scenario 40:Enter Comments  into the 'Approve and PSR' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comment added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc41_TaskUser_6_LogouthePage()'><b>Tc41_TaskUser_6_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-11097622" onClick='toggleBox("Output-11097622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11097622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11097622">
+Scenario 41:Task User-6 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc42_Task_User7_Login()'><b>Tc42_Task_User7_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-31626951" onClick='toggleBox("Output-31626951", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31626951" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31626951">
+Scenario 42:Login as Task User-7 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc43_User7_ApproveAnd_Forward()'><b>Tc43_User7_ApproveAnd_Forward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-978440" onClick='toggleBox("Output-978440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-978440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-978440">
+Scenario 43:Task User-7 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc44_User_7_OTP_Validation()'><b>Tc44_User_7_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-31164995" onClick='toggleBox("Output-31164995", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31164995" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31164995">
+Scenario 44:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc45_User_7_Add_One_More_Task_User()'><b>Tc45_User_7_Add_One_More_Task_User</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-9264737" onClick='toggleBox("Output-9264737", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9264737" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9264737">
+Scenario 45 : Add a next task user<br/>
+It should open Dynamic User and Groups for workflow dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Next task user added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc46_User_7_EnterCommentAndApprovedForward()'><b>Tc46_User_7_EnterCommentAndApprovedForward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-13498155" onClick='toggleBox("Output-13498155", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13498155" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13498155">
+Scenario 46:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comments added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc47_TaskUser_6_LogouthePage()'><b>Tc47_TaskUser_6_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-14233099" onClick='toggleBox("Output-14233099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14233099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14233099">
+Scenario 47:Task User-7 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc48_Task_User7_Login()'><b>Tc48_Task_User7_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-8870861" onClick='toggleBox("Output-8870861", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8870861" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8870861">
+Scenario 48:Login as Task User-8 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc49_User8_ApproveAnd_Forward()'><b>Tc49_User8_ApproveAnd_Forward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-8018424" onClick='toggleBox("Output-8018424", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8018424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8018424">
+Scenario 49:Task User-8 'Approve and Forward'<br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc50_User_8_OTP_Validation()'><b>Tc50_User_8_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-32923385" onClick='toggleBox("Output-32923385", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32923385" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32923385">
+Scenario 50:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc51_User_8_Add_One_More_Task_User()'><b>Tc51_User_8_Add_One_More_Task_User</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-6509520" onClick='toggleBox("Output-6509520", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6509520" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6509520">
+Scenario 51 :Add a next task user<br/>
+Select Task user for Dynamic workflow<br/>
+It should open Dynamic User and Groups for workflow dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Next Task User  added Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc52_User_8_EnterCommentAndApprovedForwardR()'><b>Tc52_User_8_EnterCommentAndApprovedForwardR</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-32781005" onClick='toggleBox("Output-32781005", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32781005" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32781005">
+Scenario 52:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comments added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc53_TaskUser_8_LogouthePage()'><b>Tc53_TaskUser_8_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-32521863" onClick='toggleBox("Output-32521863", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32521863" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32521863">
+Scenario 53:Task User-8 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc54_Task_User9_Login()'><b>Tc54_Task_User9_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-1465104" onClick='toggleBox("Output-1465104", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1465104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1465104">
+Scenario 44:Login as Task User-9<br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc55_User9_ApproveAnd_Forward()'><b>Tc55_User9_ApproveAnd_Forward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-15008878" onClick='toggleBox("Output-15008878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15008878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15008878">
+Scenario 55:Task User-9 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc56_User_9_OTP_Validation()'><b>Tc56_User_9_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-6580773" onClick='toggleBox("Output-6580773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6580773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6580773">
+Scenario 56:Enter valid OTP<br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc57_User_9_Add_One_More_Task_User()'><b>Tc57_User_9_Add_One_More_Task_User</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-33153787" onClick='toggleBox("Output-33153787", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-33153787" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-33153787">
+Scenario 57 : Add a next task user<br/>
+Select Task User for Dynamic Workflow<br/>
+It should open Dynamic User and Groups for workflow dialog<br/>
+Enter User name into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a User<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Next Task User added Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>69</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc58_User_9_EnterCommentAndApprovedForward()'><b>Tc58_User_9_EnterCommentAndApprovedForward</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-22900457" onClick='toggleBox("Output-22900457", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22900457" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22900457">
+Scenario 58:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comment added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc59_TaskUser_9_LogouthePage()'><b>Tc59_TaskUser_9_LogouthePage</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-366595" onClick='toggleBox("Output-366595", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-366595" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-366595">
+Scenario 59:Task User-9 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc60_Task_User10_Login()'><b>Tc60_Task_User10_Login</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-2485355" onClick='toggleBox("Output-2485355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2485355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2485355">
+Scenario 60:Login as Task User-10 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc61_User10_ApproveAnd_PSR()'><b>Tc61_User10_ApproveAnd_PSR</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-6001424" onClick='toggleBox("Output-6001424", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6001424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6001424">
+Scenario 61:Task User-10 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc62_User_10_OTP_Validation()'><b>Tc62_User_10_OTP_Validation</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-14198073" onClick='toggleBox("Output-14198073", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14198073" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14198073">
+Scenario 62:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+<tr>
+<td title='Script.ApproveAndFrwdByAllUsers.Tc63_User_10_EnterCommentAndApprovedPSR()'><b>Tc63_User_10_EnterCommentAndApprovedPSR</b><br>Test class: Script.ApproveAndFrwdByAllUsers<br/>
+<a href="#Output-25291174" onClick='toggleBox("Output-25291174", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25291174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25291174">
+Scenario 63:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Document Approved by All Users Successfully..<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndFrwdByAllUsers@a8564a</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Script.SearchSelectDocumentLocation">
+        <methods>
+          <include name="ExactSearchInIndexWithLoadMoreCount"/>
+          <include name="EndTime"/>
+          <include name="SavingTheSearchDoc"/>
+          <include name="TextSearchWithSQLData"/>
+          <include name="WorkflowStatusDropdown"/>
+          <include name="TextSearchWithAtpartOftheWord"/>
+          <include name="AllOfTheWordSearchIndex"/>
+          <include name="DocumentDropDown"/>
+          <include name="DateAndTime"/>
+          <include name="FolderLevelSearch"/>
+          <include name="ladBrowser"/>
+          <include name="FolderSerchIcon"/>
+          <include name="AllVrsn_Incldcmnt_FindInHit_AppendToHit"/>
+          <include name="DocumentCreatorDropDown"/>
+          <include name="TextSearchWithAllOftheWords"/>
+        </methods>
+      </class> <!-- Script.SearchSelectDocumentLocation -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (0)]">
+  <listeners>
+    <listener class-name="Generic.ListenersRetry"/>
+  </listeners>
+  <test thread-count="5" name="Test4(failed)">
+    <classes>
+      <class name="Script.ApproveForwardAndRework">
+        <methods>
+          <include name="Tc11_Task_User2_Login"/>
+          <include name="Tc32_User_2_OTP_Validation"/>
+          <include name="Tc12_User2_ApproveAndForward_Wf"/>
+          <include name="Tc13_User_2_OTP_Validation"/>
+          <include name="Tc30_Task2_User_Login"/>
+          <include name="Tc10_TaskUser_1_LogouthePage"/>
+          <include name="Tc22_User4_ReworkDocument"/>
+          <include name="Tc17_User3_ApproveAndForward_Wf"/>
+          <include name="Tc20_TaskUser_3_LogouthePage"/>
+          <include name="Tc35_Task_User_1Login"/>
+          <include name="Tc38_User_1_EnterCommentNotifyOriginator"/>
+          <include name="Tc04_SendToWorkflowDialog"/>
+          <include name="Tc21_Task_User4_Login"/>
+          <include name="Tc33_User_2_EnterCommentAndSendDocumentToPreviousUserForRework"/>
+          <include name="Tc02_CreateOfficeNoteDynamicWF"/>
+          <include name="Tc34_TaskUser_2_LogouthePage"/>
+          <include name="Tc15_TaskUser_2_LogouthePage"/>
+          <include name="Tc06_Task_User1_Login"/>
+          <include name="Tc25_TaskUser_4_LogouthePage"/>
+          <include name="Tc19_User_3_EnterCommentAndSendDocumentToNextUser"/>
+          <include name="Tc18_User_3_OTP_Validation"/>
+          <include name="Tc26_User3_Rework"/>
+          <include name="Tc03_EnterOTPDialog"/>
+          <include name="Tc29_TaskUser_3_LogouthePage"/>
+          <include name="Tc16_Task_User3_Login"/>
+          <include name="Tc08_User_1_OTP_Validation"/>
+          <include name="Tc27_User_3_OTP_Validation"/>
+          <include name="ladBrowser"/>
+          <include name="Tc24_User_4_EnterCommentAndSendDocumentToNextUser"/>
+          <include name="Tc14_User_2_EnterCommentAndSendDocumentToNextUser"/>
+          <include name="Tc37_User_1_OTP_Validation"/>
+          <include name="Tc07_User1_ApproveAndForward_Wf"/>
+          <include name="Tc23_User_4_OTP_Validation"/>
+          <include name="Tc28_User_3_EnterCommentAndSendDocumentToPreviousUserForRework"/>
+          <include name="Tc05_Originator_Logout"/>
+          <include name="Tc36_User1_ReworkTheDocument"/>
+          <include name="Tc01_LoginSIDBI"/>
+          <include name="Tc09_User_1_EnterCommentAndSendDocumentToNextUser"/>
+          <include name="Tc31_User2_ReworkTheDocument"/>
+        </methods>
+      </class> <!-- Script.ApproveForwardAndRework -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" name="Test6(failed)">
+    <classes>
+      <class name="Script.PrintFunctionality">
+        <methods>
+          <include name="ladBrowser"/>
+          <include name="TC02_SIDBI_exports_with_Retain"/>
+        </methods>
+      </class> <!-- Script.PrintFunctionality -->
+    </classes>
+  </test> <!-- Test6(failed) -->
+  <test thread-count="5" name="Test7(failed)">
+    <classes>
+      <class name="Script.INWARD_EXTERNAL_WORKFLOW">
+        <methods>
+          <include name="LandBrowser1"/>
+          <include name="TC_02_Accept_and_Forward_INWARD_Workflow_Document_from_User1"/>
+          <include name="TC_07_Accept_and_Forward_INWARD_Workflow_Document_from_User6"/>
+          <include name="TC_13_Approve_and_PSR_INWARD_Workflow_Document_from_User1"/>
+          <include name="TC_18_Approve_and_PSR_INWARD_Workflow_Document_from_User6"/>
+          <include name="TC_12_Create_INWARD_Document_and_sendTo_Inward_Workflow_Approve_and_PSR"/>
+          <include name="TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow"/>
+          <include name="TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6"/>
+          <include name="LandBrowser"/>
+          <include name="TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1"/>
+          <include name="TC_01_Create_INWARD_Document_and_sendTo_Inward_Workflow"/>
+        </methods>
+      </class> <!-- Script.INWARD_EXTERNAL_WORKFLOW -->
+    </classes>
+  </test> <!-- Test7(failed) -->
+  <test thread-count="5" name="Test8(failed)">
+    <classes>
+      <class name="Script.INWARD_INTERNAL_WORKFLOW">
+        <methods>
+          <include name="TC_33_Intimate_INWARD_Workflow_Document_from_User2"/>
+          <include name="TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6"/>
+          <include name="TC_31_Create_INWARD_Internal_Document"/>
+          <include name="LandBrowser"/>
+          <include name="TC_32_Intimate_INWARD_Workflow_Document_from_User1"/>
+          <include name="TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1"/>
+          <include name="TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow"/>
+        </methods>
+      </class> <!-- Script.INWARD_INTERNAL_WORKFLOW -->
+    </classes>
+  </test> <!-- Test8(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->

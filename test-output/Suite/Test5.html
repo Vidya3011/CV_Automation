@@ -1,0 +1,460 @@
+<html>
+<head>
+<title>TestNG:  Test5</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test5</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 30 07:04:35 CDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>817 seconds (817392 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.A_BlankSearch()'><b>A_BlankSearch</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-20710841" onClick='toggleBox("Output-20710841", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20710841" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20710841">
+Scenario 01: Search tab - blank search<br/>
+User click on Search tab<br/>
+Click on find button<br/>
+It should list all the document successfully...<br/>
+Click on clear button<br/>
+Searched document list cleared successfull<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.B_ExactSearchInIndexWithLoadMoreCount()'><b>B_ExactSearchInIndexWithLoadMoreCount</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-6467264" onClick='toggleBox("Output-6467264", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6467264" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6467264">
+Scenario 02: Search - load more count<br/>
+User click on Search tab<br/>
+Enter value into Index contains textbox<br/>
+Click on find button<br/>
+Scroll down the searched list,now user can able to see the 'loadmore' button<br/>
+Click on load more button<br/>
+Scroll down the searched list,again it will show the 'load more' button<br/>
+Click on load more button again<br/>
+It should show 'no more data found' warning alert, Warning alert displayed successfull<br/>
+Click on OK button<br/>
+It should close the Alert dialog successfull<br/>
+Click on clear button<br/>
+It should clear the searched document list successfully<br/>
+</div>
+</td>
+<td></td>
+<td>100</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.C_ExactSearchInIndex()'><b>C_ExactSearchInIndex</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-31310795" onClick='toggleBox("Output-31310795", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31310795" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31310795">
+Scenario 03: Search tab - Index search contains 'Exact Phrase'<br/>
+User click on search tab<br/>
+Enter value on index search contains textbox<br/>
+Click on find button<br/>
+It should list the document on the page, document displayed successfull...<br/>
+Click on Clear button<br/>
+It should clear the searched document list successfully<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.D_AtLeastOneWordSeachIndex()'><b>D_AtLeastOneWordSeachIndex</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-22679013" onClick='toggleBox("Output-22679013", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22679013" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22679013">
+Scenario 04: Search tab- Index contains 'AtleastOneOfTheWord'<br/>
+User click on Search tab<br/>
+User click on atleastoneofthe word submenu<br/>
+User enter the value into  index contains text box<br/>
+User click on find button<br/>
+It should display document on the page<br/>
+Searchfunctionality with exact phrase index contains search working fine<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.E_AllOfTheWordSearchIndex()'><b>E_AllOfTheWordSearchIndex</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-11628322" onClick='toggleBox("Output-11628322", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11628322" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11628322">
+Scenario 05:Search tab Index contains 'AtleastOneOfTheWord'<br/>
+Click on Index contains search 'all of th word' submenu<br/>
+Enter value in index contains search textbox<br/>
+Click on find button<br/>
+It should display the document on the page, Document dislpayed successsfull...<br/>
+Index contains search 'all of the word' working fine...<br/>
+Click on clear button<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.G_FolderLevelSearch()'><b>G_FolderLevelSearch</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-26783177" onClick='toggleBox("Output-26783177", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26783177" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26783177">
+Scenario 10: Verify 'Select document location' - folder<br/>
+Click on search tab<br/>
+Click on 'Select search location' textbox<br/>
+Expand a cabinet<br/>
+Expand a drawer<br/>
+Select a folder<br/>
+Click on 'Select search location' dialog OK button<br/>
+Click on find button<br/>
+It should display the particular selected folder documents on the page<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.H_DrawerLevelSearch()'><b>H_DrawerLevelSearch</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-11727019" onClick='toggleBox("Output-11727019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11727019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11727019">
+Scneario 11: Verify 'Select Document location' - drawer<br/>
+Click on search tab<br/>
+Click on 'Select Document location' textbox<br/>
+Expand a cabinet<br/>
+Select a drawer<br/>
+Click on 'Select Document location' dialog OK button<br/>
+Click on find button<br/>
+It should display the particular drawer document on the page<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.I_CabinetLevel()'><b>I_CabinetLevel</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-14470092" onClick='toggleBox("Output-14470092", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14470092" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14470092">
+Scenario 12: Verify 'Select Document location'- cabinet <br/>
+Click on search tab<br/>
+Click on 'Select Document location' textbox<br/>
+Expand a cabinet<br/>
+Click on 'Select Document location' dialog OK button<br/>
+Click on find button<br/>
+It should display the searched cabinet document on the page<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.J_DocumentDropDown()'><b>J_DocumentDropDown</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-32091788" onClick='toggleBox("Output-32091788", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32091788" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32091788">
+Scenario 13: Verify search tab ('Document Type')<br/>
+Click on document type dropdown<br/>
+User should select a document type<br/>
+Click on find button<br/>
+It should display the searched document type documents on the page<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.K_DocumentCreatorDropDown()'><b>K_DocumentCreatorDropDown</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-8265064" onClick='toggleBox("Output-8265064", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8265064" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8265064">
+Scenario 14:Verify Search tab  ('document creator')<br/>
+Click on search tab<br/>
+Select a document creator from the dropdown<br/>
+Click on find button<br/>
+It should display the searched creator documents on the page<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.L_WorkflowStatusDropdown()'><b>L_WorkflowStatusDropdown</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-3036856" onClick='toggleBox("Output-3036856", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3036856" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3036856">
+Scenario 14:Verify Search tab-Workflow status(Reject option)<br/>
+Click on workflow status dropdown<br/>
+Select Reject option<br/>
+Click on find button<br/>
+It should display the rejected workflow documents on the page<br/>
+Click on clear button<br/>
+Listed document cleared successfully...<br/>
+=================================================================<br/>
+Scenario 15:  Verify Search tab-Workflow status(Pending option)<br/>
+Select the workflow dropdown pending Option<br/>
+Click on find button<br/>
+It should display the wrokflow status pending documents on the page<br/>
+Click on clear button<br/>
+Listed document cleared successfully...<br/>
+===============================================================================<br/>
+Scenario 16: Verify Search tab-Workflow status(Workflow completed option)<br/>
+Select a workflow dropdown 'workflow completed' option<br/>
+USer click on find button<br/>
+It should display the wrokflow completed documents on the page<br/>
+Click on clear button<br/>
+Listed document cleared successfully...<br/>
+===============================================================================<br/>
+Scenario 17: Verify Search tab-Workflow status(Endworkflow option)<br/>
+Select a workflow dropdown  'endworkflow' option<br/>
+Click on find button<br/>
+It should display the workflow ended documents on the page<br/>
+Click on clear button<br/>
+Listed document cleared successfully...<br/>
+===============================================================================<br/>
+Scenario 18: Verify Search tab-Workflow status(TaskCompleted option)<br/>
+Select a workflow dropdown  Task completed Option<br/>
+Click on find button<br/>
+It should display the Task completed documents on the page<br/>
+Click on clear button<br/>
+Listed document cleared successfully...<br/>
+===============================================================================<br/>
+</div>
+</td>
+<td></td>
+<td>70</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.M_SavingTheSearchDoc()'><b>M_SavingTheSearchDoc</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-25586153" onClick='toggleBox("Output-25586153", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25586153" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25586153">
+Scenario 18:Verify Select saved search functionality<br/>
+Select search tab<br/>
+Click on new search<br/>
+Enter value into new search textbox<br/>
+Enter value in index contains search textbox<br/>
+Select a document data type<br/>
+Selecct a document creator<br/>
+Click on 'select saved search' save icon<br/>
+Mouse hover on saved select search dropdown <br/>
+Click on find<br/>
+It should display the searched document on the page<br/>
+Search tab: searched documents saved functionality working fine<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.N_TextSearchWithSQLData()'><b>N_TextSearchWithSQLData</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-26508151" onClick='toggleBox("Output-26508151", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26508151" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26508151">
+Scenario 19:Search tab- TextContains search 'alloftheword' option<br/>
+NOTE:Start the indexer server then execute the mentioned SQL statement 'ALTER FULLTEXT INDEX ON Indexer START FULL POPULATION
+Select * from Indexer<br/>
+Click on search tab<br/>
+Select text contains 'alloftheword' option<br/>
+Start the  indexer by using sql statement<br/>
+Click on find button<br/>
+It will automatically  list all the indexed document relate to the search<br/>
+Click on find button<br/>
+open the document from the list, verify the thumbnail it will be highlihted for the particular search.<br/>
+</div>
+</td>
+<td></td>
+<td>95</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.O_TextSearchWithAllOftheWords()'><b>O_TextSearchWithAllOftheWords</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-13237063" onClick='toggleBox("Output-13237063", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13237063" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13237063">
+Scenario 20:Search tab- TextContains search 'AtLeasetOneOFTheWord' option<br/>
+NOTE:Start the indexer server then execute the mentioned SQL statement 'ALTER FULLTEXT INDEX ON Indexer START FULL POPULATION
+Select * from Indexer<br/>
+Click on search tab<br/>
+Select text contains 'AtLeastOneOFTheWord' option<br/>
+Start the  indexer by using sql statement<br/>
+It will automatically  list all the indexed document relate to the search<br/>
+open the document from the list, verify the thumbnail it will be highlihted for the particular search.<br/>
+Locked message displayed<br/>
+AlertNotPresent<br/>
+</div>
+</td>
+<td></td>
+<td>97</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.P_TextSearchWithAtpartOftheWord()'><b>P_TextSearchWithAtpartOftheWord</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-19371180" onClick='toggleBox("Output-19371180", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19371180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19371180">
+Scenario 21:Search tab- TextContains search 'AtPartOFTheWord' option<br/>
+NOTE:Start the indexer server then execute the mentioned SQL statement 'ALTER FULLTEXT INDEX ON Indexer START FULL POPULATION
+Select * from Indexer<br/>
+Click on search tab<br/>
+Click on 'AtpartOFtheWord' word submenu<br/>
+It will automatically  list all the indexed document relate to the search<br/>
+User click on Find button<br/>
+open the document from the list, verify the thumbnail it will be highlihted for the particular search.<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.Q_FolderSerchIcon()'><b>Q_FolderSerchIcon</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-16327624" onClick='toggleBox("Output-16327624", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16327624" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16327624">
+Scenario 22: Navigation folder icon search<br/>
+Click on navigation folder search icon<br/>
+Enter value into navigation folder search textbox<br/>
+Click on Keyboard ENTER key<br/>
+Folder search dialog should be opened<br/>
+Searched folder documents display on the dialog box successfully<br/>
+Click on folder document close icon<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.R_QuickSearch()'><b>R_QuickSearch</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-25565487" onClick='toggleBox("Output-25565487", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25565487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25565487">
+Scenario 23: Search tab - Quick search<br/>
+Enter value in quick search textbox<br/>
+Click on Keyboard ENTER key<br/>
+It should display searched document on the page successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.S_DocumentSearch()'><b>S_DocumentSearch</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-5455908" onClick='toggleBox("Output-5455908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5455908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5455908">
+Scenario 24:Folder document search<br/>
+Open a folder<br/>
+Enter document name in folder search text box<br/>
+It should display the particular document on the page<br/>
+The documents Search from folder completed, working fine<br/>
+</div>
+</td>
+<td></td>
+<td>69</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+<tr>
+<td title='Script.SearchSelectDocumentLocation.Tc01_LoginSIDBI()'><b>Tc01_LoginSIDBI</b><br>Test class: Script.SearchSelectDocumentLocation<br/>
+<a href="#Output-18864171" onClick='toggleBox("Output-18864171", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18864171" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18864171">
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>Script.SearchSelectDocumentLocation@2ac478</td></tr>
+</table><p>
+</body>
+</html>

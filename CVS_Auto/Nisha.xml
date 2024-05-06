@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="1">
+   
+	 <test name="Test1"> 
+    <classes>
+			<class name="Script.PrintFunctionality" />
+    </classes>
+    </test>  
+    <test name="Test2">
+   
+   <classes>
+			<class name="Script.Security_dialog" />
+  </classes>
+	</test>
+	
+  <test name="Test3">
+   
+   <classes>
+			<class name="Script.Custom_Columns_TestRoom" />
+  </classes>
+	</test>
+	 <test name="Test4">
+   
+   <classes>
+			<class name="Script.ToDoListFunctionality" />
+  </classes>
+ </test> 
+  <test name="Test5">
+   
+   <classes>
+			<class name="Script.Templates" />
+  </classes>
+ </test> 
+	</suite> 

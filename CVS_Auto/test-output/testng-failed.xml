@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Generic.ListenersRetry"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Script.PrintFunctionality">
+        <methods>
+          <include name="exports_with_Retain"/>
+          <include name="Email_Copy_WithMsgBox_SubjectBox"/>
+          <include name="Email_Reference"/>
+          <include name="Email_ConvertPDF_WithAll_Annotations"/>
+          <include name="exports_with_convert_to_pdf_and_include_workflow_summary"/>
+          <include name="exports_with_convert_to_pdf_with_passwords"/>
+          <include name="exports_with_convert_to_pdf_and_best_quality"/>
+        </methods>
+      </class> <!-- Script.PrintFunctionality -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

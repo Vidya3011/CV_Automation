@@ -1,0 +1,1038 @@
+<html>
+<head>
+<title>TestNG:  Test2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>54/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 25 10:26:36 CDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1858 seconds (1858340 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc01_LoginSIDBI()'><b>Tc01_LoginSIDBI</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-7560250" onClick='toggleBox("Output-7560250", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7560250" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7560250">
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc02_CreateOfficeNoteDynamicWF()'><b>Tc02_CreateOfficeNoteDynamicWF</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-16310472" onClick='toggleBox("Output-16310472", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16310472" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16310472">
+Scenario 01: Create Document with 'OFFICE NOTES' document type- 'Approved And Forward' by 9 Task Users and 10th Task User 'Approve and Endworkflow'<br/>
+Click on New document tab<br/>
+Select Document location textbox<br/>
+Select a folder location for creating a document<br/>
+Select OFFICE NOTES document type<br/>
+Enter all Required details<br/>
+====================================================================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on Task User textbox<br/>
+It should open 'Dynamic User and Groups' for workflow dialog<br/>
+Enter Username into 'Search' text box<br/>
+Click on find button<br/>
+Select the Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on User textbox<br/>
+It will open 'Dynamic User and Groups for workflow' dialog<br/>
+Enter Username into 'Search' text box<br/>
+Click on find button<br/>
+Select the Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on User textbox<br/>
+It should open 'Dynamic User and Groups for workflow' dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select the Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on User textbox<br/>
+It should open 'Dynamic User and Groups for workflow' dialog<br/>
+Enter User name into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on User textbox<br/>
+It should open 'Dynamic User and Groups for workflow' dialog<br/>
+Enter User name into 'Search' textbox<br/>
+Click on Find button<br/>
+Select the Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on User textbox<br/>
+It should open 'Dynamic User and Groups for workflow' dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on User textbox<br/>
+It should open'Dynamic User and Groups for workflow' dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select a Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on User textbox<br/>
+It should open 'Dynamic User and Groups for workflow' dialog<br/>
+Enter UserName into 'Search'textbox<br/>
+Click on Find button<br/>
+Select a Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on User textbox<br/>
+It should open 'Dynamric User and Groups for workflow' dialog<br/>
+Enter User name into 'Search' textbox<br/>
+Click on Find button<br/>
+Select the Task User<br/>
+Click on  OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select Task User for dynamic workflow<br/>
+Click on User textbox<br/>
+It should open 'Dynamic User and Groups for workflow' dialog<br/>
+Enter UserName into 'Search' textbox<br/>
+Click on Find button<br/>
+Select the Task User<br/>
+Click on OK button<br/>
+Workflow Task User added successfully...<br/>
+==========================================================================================================================<br/>
+Select a browse option<br/>
+Add a file by using AutoIT script<br/>
+Page Alert is not present<br/>
+Click on create and view button<br/>
+OFFICE NOTES Document created successfully....<br/>
+Click SendtoWorkflow button<br/>
+</div>
+</td>
+<td></td>
+<td>482</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc03_EnterOTPDialog()'><b>Tc03_EnterOTPDialog</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-7350909" onClick='toggleBox("Output-7350909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7350909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7350909">
+Scenario 02: Validate OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc04_SendToWorkflowDialog()'><b>Tc04_SendToWorkflowDialog</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-3983384" onClick='toggleBox("Output-3983384", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3983384" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3983384">
+Scenario 03: Orginator Sending the document to 'OFFICE NOTES' workflow<br/>
+Select 'OFFICE NOTES' workflow from 'Available Workflow' list<br/>
+Click on Apply button<br/>
+The document will be sent to workflow successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc05_Originator_Logout()'><b>Tc05_Originator_Logout</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-28766578" onClick='toggleBox("Output-28766578", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28766578" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28766578">
+Scenario 04:Orginator Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc06_Task_User1_Login()'><b>Tc06_Task_User1_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-7497633" onClick='toggleBox("Output-7497633", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7497633" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7497633">
+Scenario 05:Login as Task User-1 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc07_User1_ApproveAndForward_Wf()'><b>Tc07_User1_ApproveAndForward_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-253538" onClick='toggleBox("Output-253538", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-253538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-253538">
+Scenario 06:Task User-1 'Approve and Forward'<br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc08_User_1_OTP_Validation()'><b>Tc08_User_1_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-12851065" onClick='toggleBox("Output-12851065", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12851065" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12851065">
+Scenario 07:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc09_User_1_EnterCommentAndSendDocumentToNextUser()'><b>Tc09_User_1_EnterCommentAndSendDocumentToNextUser</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-16395752" onClick='toggleBox("Output-16395752", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16395752" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16395752">
+Scenario 08:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comments added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc10_TaskUser_1_LogouthePage()'><b>Tc10_TaskUser_1_LogouthePage</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-6026657" onClick='toggleBox("Output-6026657", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6026657" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6026657">
+Scenario 09:Task User-1 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc11_Task_User2_Login()'><b>Tc11_Task_User2_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-14550943" onClick='toggleBox("Output-14550943", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14550943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14550943">
+Scenario 10:Login as Task User-2 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc12_User2_ApproveAndForward_Wf()'><b>Tc12_User2_ApproveAndForward_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-12977634" onClick='toggleBox("Output-12977634", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12977634" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12977634">
+Scenario 11:Task User-2 'Approve and Forward'<br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc13_User_2_OTP_Validation()'><b>Tc13_User_2_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-24422169" onClick='toggleBox("Output-24422169", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24422169" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24422169">
+Scenario 12:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc14_User_2_EnterCommentAndSendDocumentToNextUser()'><b>Tc14_User_2_EnterCommentAndSendDocumentToNextUser</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-11229854" onClick='toggleBox("Output-11229854", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11229854" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11229854">
+Scenario 13:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comment added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc15_TaskUser_2_LogouthePage()'><b>Tc15_TaskUser_2_LogouthePage</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-3244961" onClick='toggleBox("Output-3244961", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3244961" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3244961">
+Scenario 14:Task User-2 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc16_Task_User3_Login()'><b>Tc16_Task_User3_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-28275864" onClick='toggleBox("Output-28275864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28275864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28275864">
+Scenario 15:Login as Task User-3 <br/>
+Log into EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc17_User3_ApproveAndForward_Wf()'><b>Tc17_User3_ApproveAndForward_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-21342217" onClick='toggleBox("Output-21342217", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21342217" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21342217">
+Scenario 16:Task User-3 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc18_User_3_OTP_Validation()'><b>Tc18_User_3_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-10052086" onClick='toggleBox("Output-10052086", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10052086" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10052086">
+Scenario 17:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc19_User_3_EnterCommentAndSendDocumentToNextUser()'><b>Tc19_User_3_EnterCommentAndSendDocumentToNextUser</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-21337676" onClick='toggleBox("Output-21337676", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21337676" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21337676">
+Scenario 18:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comment added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc20_TaskUser_3_LogouthePage()'><b>Tc20_TaskUser_3_LogouthePage</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-12526711" onClick='toggleBox("Output-12526711", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12526711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12526711">
+Scenario 19:Task User-3 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc21_Task_User4_Login()'><b>Tc21_Task_User4_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-30838951" onClick='toggleBox("Output-30838951", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30838951" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30838951">
+Scenario 20:Login as Task User-4 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc22_User3_ApproveAndForward_Wf()'><b>Tc22_User3_ApproveAndForward_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-28818921" onClick='toggleBox("Output-28818921", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28818921" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28818921">
+Scenario 21:Task User-4 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc23_User_4_OTP_Validation()'><b>Tc23_User_4_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-10294000" onClick='toggleBox("Output-10294000", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10294000" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10294000">
+Scenario 22:Enter valid OTP<br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc24_User_4_EnterCommentAndSendDocumentToNextUser()'><b>Tc24_User_4_EnterCommentAndSendDocumentToNextUser</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-16859783" onClick='toggleBox("Output-16859783", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16859783" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16859783">
+Scenario 23:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Comment added successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc25_TaskUser_4_LogouthePage()'><b>Tc25_TaskUser_4_LogouthePage</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-5208568" onClick='toggleBox("Output-5208568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5208568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5208568">
+Scenario 24:Task User-4 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc26_Task_User5_Login()'><b>Tc26_Task_User5_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-30719368" onClick='toggleBox("Output-30719368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30719368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30719368">
+Scenario 25:Login as Task User-5 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session for user is already active.Do you want to create new session? dialog box displayed User click on OK button,<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc27_User5_ApproveAndEnd_Wf()'><b>Tc27_User5_ApproveAndEnd_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-1110517" onClick='toggleBox("Output-1110517", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1110517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1110517">
+Scenario 26:Task User-5 'Approve and EndWorkflow' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc28_User_5_OTP_Validation()'><b>Tc28_User_5_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-29897437" onClick='toggleBox("Output-29897437", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29897437" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29897437">
+Scenario 28:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc29_User_5_EnterCommentAndApporveTheWorkflow()'><b>Tc29_User_5_EnterCommentAndApporveTheWorkflow</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-24022219" onClick='toggleBox("Output-24022219", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24022219" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24022219">
+Scenario 28:Enter Comments  into the 'Approve and Approve' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc30_TaskUser_5_LogouthePage()'><b>Tc30_TaskUser_5_LogouthePage</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-15980446" onClick='toggleBox("Output-15980446", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15980446" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15980446">
+Scenario 29:Task User-5 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc31_Task_User6_Login()'><b>Tc31_Task_User6_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-22629520" onClick='toggleBox("Output-22629520", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22629520" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22629520">
+Scenario 30:Login as Task User-6 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc32_User6_ApproveAndForward_Wf()'><b>Tc32_User6_ApproveAndForward_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-23945538" onClick='toggleBox("Output-23945538", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23945538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23945538">
+Scenario 31:Task User-6 'Approve and Forward'<br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc33_User_6_OTP_Validation()'><b>Tc33_User_6_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-9613080" onClick='toggleBox("Output-9613080", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9613080" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9613080">
+Scenario 32:Enter valid OTP<br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc34_User_6_EnterCommentAndSendDocumentToNextUser()'><b>Tc34_User_6_EnterCommentAndSendDocumentToNextUser</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-289018" onClick='toggleBox("Output-289018", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-289018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-289018">
+Scenario 33:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc35_TaskUser_6_LogouthePage()'><b>Tc35_TaskUser_6_LogouthePage</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-30273289" onClick='toggleBox("Output-30273289", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30273289" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30273289">
+Scenario 34:Task User-6 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc36_Task_User7_Login()'><b>Tc36_Task_User7_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-24904957" onClick='toggleBox("Output-24904957", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24904957" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24904957">
+Scenario 35:Login as Task User-7 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc37_User7_ApproveAndForward_Wf()'><b>Tc37_User7_ApproveAndForward_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-23609809" onClick='toggleBox("Output-23609809", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23609809" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23609809">
+Scenario 36:Task User-7 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc38_User_7_OTP_Validation()'><b>Tc38_User_7_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-4462005" onClick='toggleBox("Output-4462005", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4462005" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4462005">
+Scenario 38:Enter valid OTP<br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+Exception handled successfully<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc39_User_7_EnterCommentAndSendDocumentToNextUser()'><b>Tc39_User_7_EnterCommentAndSendDocumentToNextUser</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-6627904" onClick='toggleBox("Output-6627904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6627904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6627904">
+Scenario 39:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc40_TaskUser_7_LogouthePage()'><b>Tc40_TaskUser_7_LogouthePage</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-20912490" onClick='toggleBox("Output-20912490", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20912490" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20912490">
+Scenario 40:Task User-7 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc41_Task_User8_Login()'><b>Tc41_Task_User8_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-31772385" onClick='toggleBox("Output-31772385", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31772385" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31772385">
+Scenario 41:Login as Task User-8 <br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc42_User8_ApproveAndForward_Wf()'><b>Tc42_User8_ApproveAndForward_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-17236609" onClick='toggleBox("Output-17236609", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17236609" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17236609">
+Scenario 31:Task User-8 'Approve and Forward' <br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc43_User_8_OTP_Validation()'><b>Tc43_User_8_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-18304670" onClick='toggleBox("Output-18304670", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18304670" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18304670">
+Scenario 43:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc44_User_8_EnterCommentAndSendDocumentToNextUser()'><b>Tc44_User_8_EnterCommentAndSendDocumentToNextUser</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-4550098" onClick='toggleBox("Output-4550098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4550098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4550098">
+Scenario 44:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc45_TaskUser_8_LogouthePage()'><b>Tc45_TaskUser_8_LogouthePage</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-24682510" onClick='toggleBox("Output-24682510", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24682510" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24682510">
+Scenario 45:Task User-8 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc46_Task_User9_Login()'><b>Tc46_Task_User9_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-28162694" onClick='toggleBox("Output-28162694", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28162694" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28162694">
+Scenario 46:Login as Task User-9<br/>
+Login to EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc47_User9_ApproveAndForward_Wf()'><b>Tc47_User9_ApproveAndForward_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-18001890" onClick='toggleBox("Output-18001890", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18001890" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18001890">
+Scenario 47:Task User-9 'Approve and Forward'<br/>
+Go to ToDo-Tab Select 'New Items'<br/>
+Expand Metadata from a workflow document<br/>
+Select 'Accept and Forward '<br/>
+It will open ENTER OTP dialog<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc48_User_9_OTP_Validation()'><b>Tc48_User_9_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-4819303" onClick='toggleBox("Output-4819303", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4819303" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4819303">
+Scenario 48:Enter valid OTP<br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc49_User_9_EnterCommentAndSendDocumentToNextUser()'><b>Tc49_User_9_EnterCommentAndSendDocumentToNextUser</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-26192648" onClick='toggleBox("Output-26192648", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26192648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26192648">
+Scenario 49:Enter Comments  into the 'Approve and Forward' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc50_TaskUser_9_LogouthePage()'><b>Tc50_TaskUser_9_LogouthePage</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-537050" onClick='toggleBox("Output-537050", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-537050" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-537050">
+Scenario 50:Task User-9 Logout the page<br/>
+Alert not present!!!<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc51_Task_User10_Login()'><b>Tc51_Task_User10_Login</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-14966903" onClick='toggleBox("Output-14966903", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14966903" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14966903">
+Scenario 51:Login as Task User-10 <br/>
+Log into EWA<br/>
+Enter valid Username into username field<br/>
+Enter valid password into password field<br/>
+Click Login button<br/>
+Session message not appeared<br/>
+Task User Login to EWA successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc52_User10_ApproveAndEnd_Wf()'><b>Tc52_User10_ApproveAndEnd_Wf</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-6157062" onClick='toggleBox("Output-6157062", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6157062" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6157062">
+Scenario 52:Task User-10 'Approve and End' <br/>
+Go to ToDo-list tab and Select 'NewItems'<br/>
+Open workflow Document<br/>
+Select'Accept and Endworkflow'<br/>
+It will show the Confirmation dialog :Approve and End Workflow action will End the workflow and Lock the document as approved. Do you want to proceed ?<br/>
+Click on OK button<br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc53_User_10_OTP_Validation()'><b>Tc53_User_10_OTP_Validation</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-1872051" onClick='toggleBox("Output-1872051", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1872051" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1872051">
+Scenario 53:Enter valid OTP <br/>
+It Should Open OTP validation dialog... <br/>
+Enter valid OTP<br/>
+Click on OK button<br/>
+OTP validation verified successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+<tr>
+<td title='Script.ApproveAndForwardWF.Tc54_User_10_EnterCommentAndEndTheWF()'><b>Tc54_User_10_EnterCommentAndEndTheWF</b><br>Test class: Script.ApproveAndForwardWF<br/>
+<a href="#Output-9642921" onClick='toggleBox("Output-9642921", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9642921" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9642921">
+Scenario 54:Enter Comments  into the 'Approve and End' commentbox<br/>
+Add comment into comment box<br/>
+Click On OK button<br/>
+Comments added successfully...<br/>
+Document move to Next Task User Successfully...<br/>
+Task User-10 'Approve and End' the workflow document Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.ApproveAndForwardWF@1df84b8</td></tr>
+</table><p>
+</body>
+</html>

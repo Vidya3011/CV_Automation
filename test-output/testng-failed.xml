@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Generic.ListenersRetry"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="Script.AddingUserOneByOne">
+        <methods>
+          <include name="Tc55_User9_ApproveAnd_PSR"/>
+          <include name="ladBrowser"/>
+        </methods>
+      </class> <!-- Script.AddingUserOneByOne -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test6(failed)">
+    <classes>
+      <class name="Script.PrintFunctionality">
+        <methods>
+          <include name="ladBrowser"/>
+          <include name="TC02_SIDBI_exports_with_Retain"/>
+        </methods>
+      </class> <!-- Script.PrintFunctionality -->
+    </classes>
+  </test> <!-- Test6(failed) -->
+</suite> <!-- Failed suite [Suite] -->

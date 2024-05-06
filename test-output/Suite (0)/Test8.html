@@ -1,0 +1,2846 @@
+<html>
+<head>
+<title>TestNG:  Test8</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test8</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/6/9</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 25 14:01:30 CDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>7648 seconds (7648085 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow()'><b>TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-23451034" onClick='toggleBox("Output-23451034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23451034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23451034">
+Test Scenario 1 : Create INWARD Document and send To Inward workflow<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Click on New Document Tab<br/>
+Click on Destination Folder Textbox<br/>
+Expand a Cabinet<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:60,&quot;value&quot;:&quot;http://10.4.10.72:8080/CVWeb/cvLgn# has no size and location&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at Generic.BaseClass.selectElement(BaseClass.java:424)
+	at Pom.Create_DOC.Create_INWARD_Document_and_sendTo_Inward_Workflow(Create_DOC.java:672)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow(INWARD_INTERNAL_WORKFLOW.java:276)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23451034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23451034'><pre>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:60,&quot;value&quot;:&quot;http://10.4.10.72:8080/CVWeb/cvLgn# has no size and location&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at Generic.BaseClass.selectElement(BaseClass.java:424)
+	at Pom.Create_DOC.Create_INWARD_Document_and_sendTo_Inward_Workflow(Create_DOC.java:672)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow(INWARD_INTERNAL_WORKFLOW.java:276)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>67</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1()'><b>TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-25346329" onClick='toggleBox("Output-25346329", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25346329" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25346329">
+Test Scenario 2 : Accept and Forward INWARD workflow Document from User1<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-1 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully<br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User1(Create_DOC.java:1582)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:287)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25346329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25346329'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User1(Create_DOC.java:1582)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:287)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>143</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6()'><b>TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-17360958" onClick='toggleBox("Output-17360958", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17360958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17360958">
+Test Scenario 7 : Accept and Forward INWARD workflow Document from User6<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-6 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User6(Create_DOC.java:1887)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6(INWARD_INTERNAL_WORKFLOW.java:332)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17360958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17360958'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User6(Create_DOC.java:1887)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6(INWARD_INTERNAL_WORKFLOW.java:332)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>109</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_31_Create_INWARD_Internal_Document()'><b>TC_31_Create_INWARD_Internal_Document</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-784744" onClick='toggleBox("Output-784744", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-784744" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-784744">
+Test Scenario 1 : Create INWARD Document and send To Inward workflow<br/>
+Click on New Document Tab<br/>
+Click on Destination Folder Textbox<br/>
+Expand a Cabinet<br/>
+Expand a Drawer<br/>
+select a Folder<br/>
+Click on Destination folder dialogue Ok button<br/>
+Select Inward External document type<br/>
+Click on Browse option<br/>
+By using AutoIT add file from external folder<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64305}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6236174194310986bb29d09267a6824f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pom.Create_DOC.Create_INWARD_Internal_Document_and_sendTo_Inward_Workflow_For_Intimation(Create_DOC.java:2982)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_31_Create_INWARD_Internal_Document(INWARD_INTERNAL_WORKFLOW.java:367)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace784744", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace784744'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64305}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6236174194310986bb29d09267a6824f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pom.Create_DOC.Create_INWARD_Internal_Document_and_sendTo_Inward_Workflow_For_Intimation(Create_DOC.java:2982)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_31_Create_INWARD_Internal_Document(INWARD_INTERNAL_WORKFLOW.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>87</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_32_Intimate_INWARD_Workflow_Document_from_User1()'><b>TC_32_Intimate_INWARD_Workflow_Document_from_User1</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-189897" onClick='toggleBox("Output-189897", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-189897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-189897">
+Test Scenario 2 : Accept and Forward INWARD workflow Document from User1<br/>
+Click on Refresh button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully<br/>
+Move to Select Action option<br/>
+Click on Intimate option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64305}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6236174194310986bb29d09267a6824f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Intimate_INWARD_Workflow_Document_from_User1(Create_DOC.java:2840)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_32_Intimate_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:376)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace189897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace189897'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64305}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6236174194310986bb29d09267a6824f
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Intimate_INWARD_Workflow_Document_from_User1(Create_DOC.java:2840)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_32_Intimate_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:376)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>65</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_33_Intimate_INWARD_Workflow_Document_from_User2()'><b>TC_33_Intimate_INWARD_Workflow_Document_from_User2</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-19416360" onClick='toggleBox("Output-19416360", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19416360" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19416360">
+Test Scenario 3 : Accept and Forward INWARD workflow Document from User2<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-2 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Intimate option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64305}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6236174194310986bb29d09267a6824f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Intimate_INWARD_Workflow_Document_from_User2(Create_DOC.java:2889)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_33_Intimate_INWARD_Workflow_Document_from_User2(INWARD_INTERNAL_WORKFLOW.java:385)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19416360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19416360'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64305}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6236174194310986bb29d09267a6824f
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Intimate_INWARD_Workflow_Document_from_User2(Create_DOC.java:2889)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_33_Intimate_INWARD_Workflow_Document_from_User2(INWARD_INTERNAL_WORKFLOW.java:385)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>104</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.LandBrowser1()'><b>LandBrowser1</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-13677484" onClick='toggleBox("Output-13677484", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13677484" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13677484">
+Browser launch with SIDBI Testing URL<br/>
+SIDBI URL started successfully<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.LandBrowser2()'><b>LandBrowser2</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-2626050" onClick='toggleBox("Output-2626050", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2626050" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2626050">
+Browser launch with SIDBI Testing URL<br/>
+SIDBI URL started successfully<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.LandBrowser21()'><b>LandBrowser21</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-22598945" onClick='toggleBox("Output-22598945", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22598945" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22598945">
+Browser launch with SIDBI Testing URL<br/>
+SIDBI URL started successfully<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.Login_EWA()'><b>Login_EWA</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-28533929" onClick='toggleBox("Output-28533929", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28533929" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28533929">
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+User has logged in successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.Login_EWA1()'><b>Login_EWA1</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-18440449" onClick='toggleBox("Output-18440449", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18440449" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18440449">
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+User has logged in successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.Login_EWA2()'><b>Login_EWA2</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-19780004" onClick='toggleBox("Output-19780004", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19780004" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19780004">
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+User has logged in successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.Login_EWA21()'><b>Login_EWA21</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-20824348" onClick='toggleBox("Output-20824348", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20824348" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20824348">
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+User has logged in successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_01_Create_INWARD_Document_and_sendTo_Inward_Workflow()'><b>TC_01_Create_INWARD_Document_and_sendTo_Inward_Workflow</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-15052672" onClick='toggleBox("Output-15052672", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15052672" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15052672">
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Click on New Document Tab<br/>
+Click on Destination Folder Textbox<br/>
+Expand a Cabinet<br/>
+Expand a Drawer<br/>
+select a Folder<br/>
+Click on Destination folder dialogue Ok button<br/>
+Select Inward External document type<br/>
+Browse document<br/>
+By using AutoIT add file from external folder<br/>
+Accept alert message<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXX KXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXXXX SXXXXX CXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : MANOJ MITTAL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : K S SRIKANTH<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : ANXXX ARXXXL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXX KXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXXXX SXXXXX CXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : MANOJ MITTAL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : K S SRIKANTH<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : ANXXX ARXXXL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on Create button<br/>
+This message should show: Document created successfully<br/>
+This message showul show: Document created successfully<br/>
+Click on view button<br/>
+INWARD - EXTERNAL Document created successfully <br/>
+The Inword ID is :TEST CABINET/26042024/IN/00055<br/>
+Close document page<br/>
+Check Document from Document List<br/>
+Mousehover on Documents Tab<br/>
+Click on Send to Workflow option<br/>
+Select Workflow name<br/>
+Click on the Apply button<br/>
+The originator sent the document to workflow successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>823</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_02_Accept_and_Forward_INWARD_Workflow_Document_from_User1()'><b>TC_02_Accept_and_Forward_INWARD_Workflow_Document_from_User1</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-25724534" onClick='toggleBox("Output-25724534", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25724534" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25724534">
+Test Scenario 2 : Accept and Forward INWARD workflow Document from User1<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Session for user is already active.Do you want to create new Session? dialog box displayed<br/>
+Click on the Yes button<br/>
+Task User-1 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully<br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-1 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>180</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_03_Accept_and_Forward_INWARD_Workflow_Document_from_User2()'><b>TC_03_Accept_and_Forward_INWARD_Workflow_Document_from_User2</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-28995141" onClick='toggleBox("Output-28995141", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28995141" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28995141">
+Test Scenario 3 : Accept and Forward INWARD workflow Document from User2<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-2 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-2 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>156</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_04_Accept_and_Forward_INWARD_Workflow_Document_from_User3()'><b>TC_04_Accept_and_Forward_INWARD_Workflow_Document_from_User3</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-5654504" onClick='toggleBox("Output-5654504", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5654504" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5654504">
+Test Scenario 4 : Accept and Forward INWARD workflow Document from User3<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-3 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-3 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>159</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_05_Accept_and_Forward_INWARD_Workflow_Document_from_User4()'><b>TC_05_Accept_and_Forward_INWARD_Workflow_Document_from_User4</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-22261781" onClick='toggleBox("Output-22261781", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22261781" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22261781">
+Test Scenario 5 : Accept and Forward INWARD workflow Document from User4<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-4 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-4 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>168</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_06_Accept_and_Forward_INWARD_Workflow_Document_from_User5()'><b>TC_06_Accept_and_Forward_INWARD_Workflow_Document_from_User5</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-20745939" onClick='toggleBox("Output-20745939", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20745939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20745939">
+Test Scenario 6 : Accept and Forward INWARD workflow Document from User5<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-5 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-5 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>156</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_07_Accept_and_Forward_INWARD_Workflow_Document_from_User6()'><b>TC_07_Accept_and_Forward_INWARD_Workflow_Document_from_User6</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-7023003" onClick='toggleBox("Output-7023003", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7023003" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7023003">
+Test Scenario 7 : Accept and Forward INWARD workflow Document from User6<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-6 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-6 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>130</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_08_Accept_and_Forward_INWARD_Workflow_Document_from_User7()'><b>TC_08_Accept_and_Forward_INWARD_Workflow_Document_from_User7</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-2987845" onClick='toggleBox("Output-2987845", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2987845" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2987845">
+Test Scenario 8 : Accept and Forward INWARD workflow Document from User7<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-7 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-7 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>109</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_09_Accept_and_Forward_INWARD_Workflow_Document_from_User8()'><b>TC_09_Accept_and_Forward_INWARD_Workflow_Document_from_User8</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-23484848" onClick='toggleBox("Output-23484848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23484848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23484848">
+Test Scenario 9 : Accept and Forward INWARD workflow Document from User8<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-8 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-8 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>117</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_10_Accept_and_Forward_INWARD_Workflow_Document_from_User9()'><b>TC_10_Accept_and_Forward_INWARD_Workflow_Document_from_User9</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-19447705" onClick='toggleBox("Output-19447705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19447705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19447705">
+Test Scenario 10 : Accept and Forward INWARD workflow Document from User9<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-9 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-9 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>107</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_11_Approve_and_End_INWARD_Workflow_Document_from_User10()'><b>TC_11_Approve_and_End_INWARD_Workflow_Document_from_User10</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-10067776" onClick='toggleBox("Output-10067776", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10067776" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10067776">
+Test Scenario 11 : Approve and End INWARD workflow Document from User10<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-10 Log into SIDBIDMSRoom<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Click on Approve and EndWorkflow option<br/>
+Approve and End Workflow action will End the workflow and Lock the document as approved. Do you want to proceed ? this message should show<br/>
+Enter comment 'Approve and End Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-10 Add comments 'Approve and End Workflow' Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>129</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_12_Create_INWARD_Document_and_sendTo_Inward_Workflow_Approve_and_PSR()'><b>TC_12_Create_INWARD_Document_and_sendTo_Inward_Workflow_Approve_and_PSR</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-10390493" onClick='toggleBox("Output-10390493", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10390493" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10390493">
+Click on New Document Tab<br/>
+Click on Destination Folder Textbox<br/>
+Expand a Cabinet<br/>
+Expand a Drawer<br/>
+select a Folder<br/>
+Click on Destination folder dialogue Ok button<br/>
+Select Inward Internal document type<br/>
+Browse a Document Page<br/>
+By using AutoIT add file from external folder<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXX KXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXXXX SXXXXX CXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : MANOJ MITTAL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : K S SRIKANTH<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : ANXXX ARXXXL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXX KXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXXXX SXXXXX CXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : MANOJ MITTAL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : K S SRIKANTH<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : ANXXX ARXXXL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on Create button<br/>
+This message should show: Document created successfully<br/>
+This message showul show: Document created successfully<br/>
+Click on view button<br/>
+INWARD - EXTERNAL Document created successfully <br/>
+The Inword ID is :TEST CABINET/26042024/IN/00056<br/>
+Close document page<br/>
+Check Document from Document List<br/>
+Mousehover on Documents Tab<br/>
+Click on send to workflow option<br/>
+Select workflow name<br/>
+Click on Apply button<br/>
+The originator sent the document to workflow successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>798</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_13_Approve_and_PSR_INWARD_Workflow_Document_from_User1()'><b>TC_13_Approve_and_PSR_INWARD_Workflow_Document_from_User1</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-20368816" onClick='toggleBox("Output-20368816", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20368816" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20368816">
+Test Scenario 13 : Approve and PSR INWARD workflow Document from User1<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-1 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Approve and PSR option<br/>
+Enter comment 'Approve and PSR Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-1 Add comments 'Approve and PSR Workflow' the document move to next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>109</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_14_Approve_and_PSR_INWARD_Workflow_Document_from_User2()'><b>TC_14_Approve_and_PSR_INWARD_Workflow_Document_from_User2</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-13861368" onClick='toggleBox("Output-13861368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13861368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13861368">
+Test Scenario 14 : Approve and PSR INWARD workflow Document from User2<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-2 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Approve and PSR option<br/>
+Enter comment 'Approve and PSR Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-2 Add comments 'Approve and PSR Workflow' the document move to next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>153</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_15_Approve_and_PSR_INWARD_Workflow_Document_from_User3()'><b>TC_15_Approve_and_PSR_INWARD_Workflow_Document_from_User3</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-5677586" onClick='toggleBox("Output-5677586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5677586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5677586">
+Test Scenario 15 : Approve and PSR INWARD workflow Document from User3<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-3 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Approve and PSR option<br/>
+Enter comment 'Approve and PSR Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-3 Add comments 'Approve and PSR Workflow' the document move to next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>167</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_16_Approve_and_PSR_INWARD_Workflow_Document_from_User4()'><b>TC_16_Approve_and_PSR_INWARD_Workflow_Document_from_User4</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-16710840" onClick='toggleBox("Output-16710840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16710840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16710840">
+Test Scenario 16 : Approve and PSR INWARD workflow Document from User4<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-4 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Approve and PSR option<br/>
+Enter comment 'Approve and PSR Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-4 Add comments 'Approve and PSR Workflow' the document move to next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>162</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_17_Approve_and_PSR_INWARD_Workflow_Document_from_User5()'><b>TC_17_Approve_and_PSR_INWARD_Workflow_Document_from_User5</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-26901331" onClick='toggleBox("Output-26901331", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26901331" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26901331">
+Test Scenario 17 : Approve and PSR INWARD workflow Document from User5<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Session for user is already active.Do you want to create new Session? dialog box displayed<br/>
+Click on the Yes button<br/>
+Task User-5 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Approve and PSR option<br/>
+Enter comment 'Approve and PSR Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-5 Add comments 'Approve and PSR Workflow' the document move to next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>171</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_18_Approve_and_PSR_INWARD_Workflow_Document_from_User6()'><b>TC_18_Approve_and_PSR_INWARD_Workflow_Document_from_User6</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-12789814" onClick='toggleBox("Output-12789814", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12789814" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12789814">
+Test Scenario 18 : Approve and PSR INWARD workflow Document from User7<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-6 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Approve and PSR option<br/>
+Enter comment 'Approve and PSR Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-6 Add comments 'Approve and PSR Workflow' the document move to next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>119</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_19_Approve_and_PSR_INWARD_Workflow_Document_from_User7()'><b>TC_19_Approve_and_PSR_INWARD_Workflow_Document_from_User7</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-29538470" onClick='toggleBox("Output-29538470", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29538470" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29538470">
+Test Scenario 19 : Approve and PSR INWARD workflow Document from User7<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-7 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Approve and PSR option<br/>
+Enter comment 'Approve and PSR Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-7 Add comments 'Approve and PSR Workflow' the document move to next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>108</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_20_Approve_and_PSR_INWARD_Workflow_Document_from_User8()'><b>TC_20_Approve_and_PSR_INWARD_Workflow_Document_from_User8</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-30273402" onClick='toggleBox("Output-30273402", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30273402" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30273402">
+Test Scenario 20 : Approve and PSR INWARD workflow Document from User8<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-8 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Approve and PSR option<br/>
+Enter comment 'Approve and PSR Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-8 Add comments 'Approve and PSR Workflow' the document move to next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>108</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_21_Approve_and_PSR_INWARD_Workflow_Document_from_User9()'><b>TC_21_Approve_and_PSR_INWARD_Workflow_Document_from_User9</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-30642312" onClick='toggleBox("Output-30642312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30642312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30642312">
+Test Scenario 21 : Approve and PSR INWARD workflow Document from User9<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-9 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Approve and PSR option<br/>
+Enter comment 'Approve and PSR Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-9 Add comments 'Approve and PSR Workflow' the document move to next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>99</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_22_PSR_and_EndWorkflow_INWARD_Workflow_Document_from_User10()'><b>TC_22_PSR_and_EndWorkflow_INWARD_Workflow_Document_from_User10</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-1526072" onClick='toggleBox("Output-1526072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526072">
+Test Scenario 22 : PSR and END Workflow INWARD workflow Document from User10<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-10 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on PSR and EndWorkflow option<br/>
+PSR and End Workflow action will End the workflow and Lock the document as PSR. Do you want to proceed ? this message should show<br/>
+Enter comment 'PSR and End Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-10 Add comments 'PSR and End Workflow' Succssfully<br/>
+Close the Browser<br/>
+</div>
+</td>
+<td></td>
+<td>155</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_25_Accept_and_Forward_INWARD_Workflow_Document_from_User2()'><b>TC_25_Accept_and_Forward_INWARD_Workflow_Document_from_User2</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-11643839" onClick='toggleBox("Output-11643839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11643839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11643839">
+Test Scenario 3 : Accept and Forward INWARD workflow Document from User2<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-2 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-2 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>157</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_26_Accept_and_Forward_INWARD_Workflow_Document_from_User3()'><b>TC_26_Accept_and_Forward_INWARD_Workflow_Document_from_User3</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-8621700" onClick='toggleBox("Output-8621700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8621700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8621700">
+Test Scenario 4 : Accept and Forward INWARD workflow Document from User3<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-3 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-3 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>162</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_27_Accept_and_Forward_INWARD_Workflow_Document_from_User4()'><b>TC_27_Accept_and_Forward_INWARD_Workflow_Document_from_User4</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-18402606" onClick='toggleBox("Output-18402606", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18402606" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18402606">
+Test Scenario 5 : Accept and Forward INWARD workflow Document from User4<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-4 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-4 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>162</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_28_Accept_and_Forward_INWARD_Workflow_Document_from_User5()'><b>TC_28_Accept_and_Forward_INWARD_Workflow_Document_from_User5</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-18537462" onClick='toggleBox("Output-18537462", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18537462" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18537462">
+Test Scenario 6 : Accept and Forward INWARD workflow Document from User5<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-5 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+Enter comment 'Accept and Forward Workflow' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-5 Add comments 'Accept and Forward Workflow' the document move to Next Task User Succssfully<br/>
+</div>
+</td>
+<td></td>
+<td>158</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_30_Rework_INWARD_Workflow_Document_from_User7()'><b>TC_30_Rework_INWARD_Workflow_Document_from_User7</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-12266090" onClick='toggleBox("Output-12266090", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12266090" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12266090">
+Test Scenario 8 :Rework INWARD workflow Document from User7<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-7 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Accept alert message and document page open successfully<br/>
+Click on Rework Option<br/>
+Enter comment 'Workflow Rework successfully'into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-7 Add comments 'Workflow Rework successfully'<br/>
+Close the browser<br/>
+</div>
+</td>
+<td></td>
+<td>118</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_34_Intimate_End_INWARD_Workflow_Document_from_User3()'><b>TC_34_Intimate_End_INWARD_Workflow_Document_from_User3</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-17109775" onClick='toggleBox("Output-17109775", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17109775" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17109775">
+Test Scenario 4 : End INWARD workflow Document from User3<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-3 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Click on Stop Workflow option<br/>
+Enter comment 'Stop Workflow successfully' into comment box<br/>
+Click on comment box Ok button<br/>
+Task User-3 Add comments 'Stop Workflow successfully'<br/>
+Close the browser<br/>
+</div>
+</td>
+<td></td>
+<td>95</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow()'><b>TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-33160397" onClick='toggleBox("Output-33160397", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-33160397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-33160397">
+Test Scenario 1 : Create INWARD Document and send To Inward workflow<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Click on New Document Tab<br/>
+Click on Destination Folder Textbox<br/>
+Expand a Cabinet<br/>
+Expand a Drawer<br/>
+select a Folder<br/>
+Click on Destination folder dialogue Ok button<br/>
+Select Inward External document type<br/>
+Click on Browse option<br/>
+By using AutoIT add file from external folder<br/>
+Accept alert message<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXX KXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXXXX SXXXXX CXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : MANOJ MITTAL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : K S SRIKANTH<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : ANXXX ARXXXL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXX KXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : AXXXXXXX SXXXXX CXXXXXX<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : MANOJ MITTAL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : K S SRIKANTH<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on User textbox<br/>
+It should open dynamic user and Group for workflow dialogue<br/>
+Enter username into search textbox<br/>
+Click on Find button<br/>
+It should display the User name on the page with HRMS details<br/>
+Select Task User for dynamic workflow<br/>
+Click on Custom user Radio button<br/>
+HRMS User name is : ANXXX ARXXXL<br/>
+Click on User and Group dialog OK button<br/>
+Workflow task user added successfully<br/>
+Click on Create button<br/>
+This message should show: Document created successfully<br/>
+This message showul show: Document created successfully<br/>
+Click on view button<br/>
+INWARD - EXTERNAL Document created successfully <br/>
+The Inword ID is :TEST CABINET/26042024/IN/00122<br/>
+Close document page<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody/tr[1]/td[1]/label[1]/span[1]&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[1]/label[1]/span[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at Generic.BaseClass.jsclick(BaseClass.java:473)
+	at Pom.Create_DOC.Create_INWARD_Document_and_sendTo_Inward_Workflow(Create_DOC.java:852)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow(INWARD_INTERNAL_WORKFLOW.java:276)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33160397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33160397'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody/tr[1]/td[1]/label[1]/span[1]&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[1]/label[1]/span[1]}
+	at sun.reflect.GeneratedConstructorAccessor129.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at Generic.BaseClass.jsclick(BaseClass.java:473)
+	at Pom.Create_DOC.Create_INWARD_Document_and_sendTo_Inward_Workflow(Create_DOC.java:852)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow(INWARD_INTERNAL_WORKFLOW.java:276)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>774</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow()'><b>TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-18631234" onClick='toggleBox("Output-18631234", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18631234" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18631234">
+Test Scenario 1 : Create INWARD Document and send To Inward workflow<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Click on New Document Tab<br/>
+Click on Destination Folder Textbox<br/>
+Expand a Cabinet<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:60,&quot;value&quot;:&quot;http://10.4.10.72:8080/CVWeb/cvLgn# has no size and location&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at Generic.BaseClass.selectElement(BaseClass.java:424)
+	at Pom.Create_DOC.Create_INWARD_Document_and_sendTo_Inward_Workflow(Create_DOC.java:672)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow(INWARD_INTERNAL_WORKFLOW.java:276)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18631234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18631234'><pre>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:60,&quot;value&quot;:&quot;http://10.4.10.72:8080/CVWeb/cvLgn# has no size and location&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at Generic.BaseClass.selectElement(BaseClass.java:424)
+	at Pom.Create_DOC.Create_INWARD_Document_and_sendTo_Inward_Workflow(Create_DOC.java:672)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow(INWARD_INTERNAL_WORKFLOW.java:276)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>71</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow()'><b>TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-3822903" onClick='toggleBox("Output-3822903", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3822903" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3822903">
+Test Scenario 1 : Create INWARD Document and send To Inward workflow<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Click on New Document Tab<br/>
+Click on Destination Folder Textbox<br/>
+Expand a Cabinet<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:60,&quot;value&quot;:&quot;http://10.4.10.72:8080/CVWeb/cvLgn# has no size and location&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at Generic.BaseClass.selectElement(BaseClass.java:424)
+	at Pom.Create_DOC.Create_INWARD_Document_and_sendTo_Inward_Workflow(Create_DOC.java:672)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow(INWARD_INTERNAL_WORKFLOW.java:276)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3822903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3822903'><pre>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:60,&quot;value&quot;:&quot;http://10.4.10.72:8080/CVWeb/cvLgn# has no size and location&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at Generic.BaseClass.selectElement(BaseClass.java:424)
+	at Pom.Create_DOC.Create_INWARD_Document_and_sendTo_Inward_Workflow(Create_DOC.java:672)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_23_Create_INWARD_Document_and_sendTo_Inward_Workflow(INWARD_INTERNAL_WORKFLOW.java:276)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>67</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1()'><b>TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-26842922" onClick='toggleBox("Output-26842922", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26842922" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26842922">
+Test Scenario 2 : Accept and Forward INWARD workflow Document from User1<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-1 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully<br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User1(Create_DOC.java:1582)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:287)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26842922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26842922'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User1(Create_DOC.java:1582)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:287)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>148</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1()'><b>TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-21094132" onClick='toggleBox("Output-21094132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21094132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21094132">
+Test Scenario 2 : Accept and Forward INWARD workflow Document from User1<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-1 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully<br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User1(Create_DOC.java:1582)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:287)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21094132", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21094132'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User1(Create_DOC.java:1582)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:287)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>150</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1()'><b>TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-8639737" onClick='toggleBox("Output-8639737", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8639737" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8639737">
+Test Scenario 2 : Accept and Forward INWARD workflow Document from User1<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-1 Log into SIDBIDMSRoom<br/>
+Click on Setting Icon<br/>
+Click on My Preferences<br/>
+Select Office document and set as Default View<br/>
+Select Pdf document and set as Default View<br/>
+Click on Apply button<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully<br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User1(Create_DOC.java:1582)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:287)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8639737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8639737'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User1(Create_DOC.java:1582)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_24_Accept_and_Forward_INWARD_Workflow_Document_from_User1(INWARD_INTERNAL_WORKFLOW.java:287)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>148</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6()'><b>TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-17963684" onClick='toggleBox("Output-17963684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17963684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17963684">
+Test Scenario 7 : Accept and Forward INWARD workflow Document from User6<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-6 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User6(Create_DOC.java:1887)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6(INWARD_INTERNAL_WORKFLOW.java:332)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17963684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17963684'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User6(Create_DOC.java:1887)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6(INWARD_INTERNAL_WORKFLOW.java:332)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>116</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6()'><b>TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-1471229" onClick='toggleBox("Output-1471229", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1471229" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1471229">
+Test Scenario 7 : Accept and Forward INWARD workflow Document from User6<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-6 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User6(Create_DOC.java:1887)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6(INWARD_INTERNAL_WORKFLOW.java:332)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1471229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1471229'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User6(Create_DOC.java:1887)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6(INWARD_INTERNAL_WORKFLOW.java:332)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>95</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+<tr>
+<td title='Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6()'><b>TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6</b><br>Test class: Script.INWARD_INTERNAL_WORKFLOW<br/>
+<a href="#Output-1974869" onClick='toggleBox("Output-1974869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1974869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1974869">
+Test Scenario 7 : Accept and Forward INWARD workflow Document from User6<br/>
+Click on Refresh button<br/>
+Click on Username option<br/>
+Click on Logout option<br/>
+Enter valid username into username field<br/>
+Enter valid password into password field<br/>
+Select a room<br/>
+Click on the Login button<br/>
+Task User-6 Log into SIDBIDMSRoom<br/>
+Move to To Do List Tab<br/>
+Click on All Item Option<br/>
+Select and Open To Do List Document<br/>
+Document open successfully <br/>
+Move to Select Action option<br/>
+Click on Accept and Forward option<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User6(Create_DOC.java:1887)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6(INWARD_INTERNAL_WORKFLOW.java:332)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1974869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1974869'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=124.0.2478.51)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT014&apos;, ip: &apos;10.4.8.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63189}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\nisha.r\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d1795a7f9c4b0f0c09cbeb86ab8c342
+	at sun.reflect.GeneratedConstructorAccessor130.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at Pom.Create_DOC.Accept_and_Forward_INWARD_Workflow_Document_from_User6(Create_DOC.java:1887)
+	at Script.INWARD_INTERNAL_WORKFLOW.TC_29_Accept_and_Forward_INWARD_Workflow_Document_from_User6(INWARD_INTERNAL_WORKFLOW.java:332)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>106</td>
+<td>Script.INWARD_INTERNAL_WORKFLOW@1313c65</td></tr>
+</table><p>
+</body>
+</html>

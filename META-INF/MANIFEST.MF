@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: maven
+Bundle-SymbolicName: maven
+Bundle-Version: 1.0.0.qualifier
+Export-Package: Generic,
+ Pom,
+ Script,
+ org.print

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SearchFun]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Script.QuickSearch">
+        <methods>
+          <include name="Tc02"/>
+          <include name="Tc01"/>
+          <include name="Tc03"/>
+          <include name="ladBrowser"/>
+        </methods>
+      </class> <!-- Script.QuickSearch -->
+      <class name="Script.SearchWith4CheckBox">
+        <methods>
+          <include name="Tc06"/>
+          <include name="Tc03"/>
+          <include name="Tc04"/>
+          <include name="Tc07"/>
+          <include name="Tc05"/>
+        </methods>
+      </class> <!-- Script.SearchWith4CheckBox -->
+      <class name="Script.SelectDocumentLocation">
+        <methods>
+          <include name="Tc03"/>
+          <include name="Tc02"/>
+          <include name="Tc05"/>
+          <include name="Tc04"/>
+          <include name="Tc07"/>
+          <include name="Tc06"/>
+          <include name="Tc08"/>
+        </methods>
+      </class> <!-- Script.SelectDocumentLocation -->
+      <class name="Script.WorkflowStatus">
+        <methods>
+          <include name="Tc02RejectStatus"/>
+          <include name="Tc03CreatedFrom"/>
+        </methods>
+      </class> <!-- Script.WorkflowStatus -->
+      <class name="Script.SearchFunctionality">
+        <methods>
+          <include name="Tc03"/>
+          <include name="Tc02"/>
+          <include name="Tc01"/>
+        </methods>
+      </class> <!-- Script.SearchFunctionality -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [SearchFun] -->

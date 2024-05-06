@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="10" parallel="classes">
+ <test name="search">
+    <classes>
+      <class name="org.mvn.seachFucn02"/> 
+<!--        <class name="org.mvn.SearchFunctionality"/>   -->
+           </classes>
+  </test> <!-- IndexText -->
+</suite> <!-- Suite -->
